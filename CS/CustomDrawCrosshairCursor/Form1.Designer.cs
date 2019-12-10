@@ -27,30 +27,30 @@ namespace CustomDrawCrosshairCursor {
             DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
             DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
             DevExpress.XtraCharts.PointSeriesLabel pointSeriesLabel1 = new DevExpress.XtraCharts.PointSeriesLabel();
-            DevExpress.XtraCharts.SeriesPoint seriesPoint1 = new DevExpress.XtraCharts.SeriesPoint("1", new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint1 = new DevExpress.XtraCharts.SeriesPoint(1D, new object[] {
             ((object)(50D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint2 = new DevExpress.XtraCharts.SeriesPoint("2", new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint2 = new DevExpress.XtraCharts.SeriesPoint(2D, new object[] {
             ((object)(34D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint3 = new DevExpress.XtraCharts.SeriesPoint("3", new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint3 = new DevExpress.XtraCharts.SeriesPoint(3D, new object[] {
             ((object)(55D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint4 = new DevExpress.XtraCharts.SeriesPoint("4", new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint4 = new DevExpress.XtraCharts.SeriesPoint(4D, new object[] {
             ((object)(77D))});
             DevExpress.XtraCharts.SplineSeriesView splineSeriesView1 = new DevExpress.XtraCharts.SplineSeriesView();
             DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
             DevExpress.XtraCharts.PointSeriesLabel pointSeriesLabel2 = new DevExpress.XtraCharts.PointSeriesLabel();
-            DevExpress.XtraCharts.SeriesPoint seriesPoint5 = new DevExpress.XtraCharts.SeriesPoint("1", new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint5 = new DevExpress.XtraCharts.SeriesPoint(1D, new object[] {
             ((object)(22D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint6 = new DevExpress.XtraCharts.SeriesPoint("2", new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint6 = new DevExpress.XtraCharts.SeriesPoint(2D, new object[] {
             ((object)(11D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint7 = new DevExpress.XtraCharts.SeriesPoint("3", new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint7 = new DevExpress.XtraCharts.SeriesPoint(3D, new object[] {
             ((object)(9D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint8 = new DevExpress.XtraCharts.SeriesPoint("4", new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint8 = new DevExpress.XtraCharts.SeriesPoint(4D, new object[] {
             ((object)(8D))});
             DevExpress.XtraCharts.SplineSeriesView splineSeriesView2 = new DevExpress.XtraCharts.SplineSeriesView();
             DevExpress.XtraCharts.SideBySideBarSeriesLabel sideBySideBarSeriesLabel1 = new DevExpress.XtraCharts.SideBySideBarSeriesLabel();
             this.chartControl1 = new DevExpress.XtraCharts.ChartControl();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.checkEdit1 = new DevExpress.XtraEditors.CheckEdit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
@@ -61,6 +61,7 @@ namespace CustomDrawCrosshairCursor {
             ((System.ComponentModel.ISupportInitialize)(splineSeriesView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel1)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // chartControl1
@@ -68,19 +69,14 @@ namespace CustomDrawCrosshairCursor {
             this.chartControl1.CrosshairOptions.ShowArgumentLabels = true;
             this.chartControl1.CrosshairOptions.ShowValueLabels = true;
             this.chartControl1.CrosshairOptions.ShowValueLine = true;
-            xyDiagram1.AxisX.WholeRange.AlwaysShowZeroLevel = true;
-            xyDiagram1.AxisX.WholeRange.AutoSideMargins = true;
-            xyDiagram1.AxisX.VisualRange.AutoSideMargins = true;
             xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisY.WholeRange.AlwaysShowZeroLevel = true;
-            xyDiagram1.AxisY.WholeRange.AutoSideMargins = true;
-            xyDiagram1.AxisY.VisualRange.AutoSideMargins = true;
             xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
             this.chartControl1.Diagram = xyDiagram1;
             this.chartControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chartControl1.Legend.Name = "Default Legend";
             this.chartControl1.Location = new System.Drawing.Point(0, 0);
             this.chartControl1.Name = "chartControl1";
-            pointSeriesLabel1.LineVisibility =  DevExpress.Utils.DefaultBoolean.True;
+            pointSeriesLabel1.LineVisibility = DevExpress.Utils.DefaultBoolean.True;
             series1.Label = pointSeriesLabel1;
             series1.Name = "Series 1";
             series1.Points.AddRange(new DevExpress.XtraCharts.SeriesPoint[] {
@@ -89,7 +85,7 @@ namespace CustomDrawCrosshairCursor {
             seriesPoint3,
             seriesPoint4});
             series1.View = splineSeriesView1;
-            pointSeriesLabel2.LineVisibility =  DevExpress.Utils.DefaultBoolean.True;
+            pointSeriesLabel2.LineVisibility = DevExpress.Utils.DefaultBoolean.True;
             series2.Label = pointSeriesLabel2;
             series2.Name = "Series 2";
             series2.Points.AddRange(new DevExpress.XtraCharts.SeriesPoint[] {
@@ -101,31 +97,29 @@ namespace CustomDrawCrosshairCursor {
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
         series1,
         series2};
-            sideBySideBarSeriesLabel1.LineVisibility =  DevExpress.Utils.DefaultBoolean.True;
+            sideBySideBarSeriesLabel1.LineVisibility = DevExpress.Utils.DefaultBoolean.True;
             this.chartControl1.SeriesTemplate.Label = sideBySideBarSeriesLabel1;
             this.chartControl1.Size = new System.Drawing.Size(480, 316);
             this.chartControl1.TabIndex = 0;
-            this.chartControl1.CustomDrawCrosshair += new DevExpress.XtraCharts.CustomDrawCrosshairEventHandler(this.chartControl1_CustomDrawCrosshair);
-            // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(480, 63);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Custom Draw Crosshair Cursor";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.checkEdit1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 316);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(480, 63);
             this.panel1.TabIndex = 0;
+            // 
+            // checkEdit1
+            // 
+            this.checkEdit1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.checkEdit1.Location = new System.Drawing.Point(309, 0);
+            this.checkEdit1.Name = "checkEdit1";
+            this.checkEdit1.Properties.Caption = "Custom Draw Crosshair Cursor";
+            this.checkEdit1.Size = new System.Drawing.Size(171, 63);
+            this.checkEdit1.TabIndex = 0;
+            this.checkEdit1.CheckedChanged += new System.EventHandler(this.OnCheckEditCheckedChanged);
             // 
             // Form1
             // 
@@ -146,6 +140,7 @@ namespace CustomDrawCrosshairCursor {
             ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesLabel1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.checkEdit1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -153,8 +148,8 @@ namespace CustomDrawCrosshairCursor {
         #endregion
 
         private DevExpress.XtraCharts.ChartControl chartControl1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
+        private DevExpress.XtraEditors.CheckEdit checkEdit1;
     }
 }
 
