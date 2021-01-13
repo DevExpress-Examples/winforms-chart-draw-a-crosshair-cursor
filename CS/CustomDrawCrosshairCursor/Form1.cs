@@ -31,7 +31,7 @@ namespace CustomDrawCrosshairCursor {
                 // Specify the text, text color and font for the crosshair group header element. 
                 groupHeaderElement.Text = "Custom draw";
                 groupHeaderElement.TextColor = Color.Green;
-                groupHeaderElement.Font = new Font(this.Font, FontStyle.Bold);
+                groupHeaderElement.Font = SystemFonts.DefaultFont;
 
                 // Obtain the first series.
                 CrosshairElement element = group.CrosshairElements[0];
