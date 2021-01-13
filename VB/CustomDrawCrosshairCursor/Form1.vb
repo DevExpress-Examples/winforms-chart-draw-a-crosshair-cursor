@@ -35,7 +35,7 @@ Namespace CustomDrawCrosshairCursor
 				' Specify the text, text color and font for the crosshair group header element. 
 				groupHeaderElement.Text = "Custom draw"
 				groupHeaderElement.TextColor = Color.Green
-				groupHeaderElement.Font = New Font(Me.Font, FontStyle.Bold)
+				groupHeaderElement.Font = SystemFonts.DefaultFont
 
 				' Obtain the first series.
 				Dim element As CrosshairElement = group.CrosshairElements(0)
