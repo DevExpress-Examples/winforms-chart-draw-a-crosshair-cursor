@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using DevExpress.Drawing;
 using DevExpress.XtraCharts;
 
 namespace CustomDrawCrosshairCursor {
@@ -31,7 +32,7 @@ namespace CustomDrawCrosshairCursor {
                 // Specify the text, text color and font for the crosshair group header element. 
                 groupHeaderElement.Text = "Custom draw";
                 groupHeaderElement.TextColor = Color.Green;
-                groupHeaderElement.Font = SystemFonts.DefaultFont;
+                groupHeaderElement.DXFont = new DXFont("SegoeUI", 12, DXFontStyle.Bold);
 
                 // Obtain the first series.
                 CrosshairElement element = group.CrosshairElements[0];
