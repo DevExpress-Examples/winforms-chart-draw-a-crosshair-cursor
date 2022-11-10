@@ -9,7 +9,7 @@ This example shows how to use the [ChartControl.CustomDrawCrosshair](https://doc
 
 ![Chart](images/chart.png)
 
-If you wish to display crosshair axis  lines and labels on a chart before custom drawing the crosshair cursor, set the [CrosshairOptions.ShowArgumentLine](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraCharts.CrosshairOptions.ShowArgumentLine), [CrosshairOptions.ShowArgumentLabels](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraCharts.CrosshairOptions.ShowValueLabels), and [CrosshairOptions.ShowValueLine](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraCharts.CrosshairOptions.ShowValueLine) properties to  `true`. 
+If you wish to display crosshair axis lines and labels on a chart before custom drawing the crosshair cursor, set the [CrosshairOptions.ShowArgumentLine](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraCharts.CrosshairOptions.ShowArgumentLine), [CrosshairOptions.ShowArgumentLabels](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraCharts.CrosshairOptions.ShowValueLabels), and [CrosshairOptions.ShowValueLine](https://docs.devexpress.com/CoreLibraries/DevExpress.XtraCharts.CrosshairOptions.ShowValueLine) properties to  `true`. 
 
 ## Files to Review
 
