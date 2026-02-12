@@ -21,7 +21,7 @@ If you wish to display crosshair axis lines and labels on a chart before custom 
 
 [Crosshair Cursor](https://docs.devexpress.com/WindowsForms/14710/controls-and-libraries/chart-control/end-user-features/tooltip-and-crosshair-cursor/crosshair-cursor?p=netframework)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-chart-draw-a-crosshair-cursor&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-chart-draw-a-crosshair-cursor&~~~was_helpful=no)
 
